@@ -25,9 +25,3 @@ mstsc /v:publicIpAddress
 
 # Mac
 open rdp://ipAdress
-
-
-
-# Stop a VM
-
-az vm stop -g resourceName -n vmName
