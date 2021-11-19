@@ -17,7 +17,6 @@ az vm create \
    --public-ip-sku Standard \
     --admin-username ${USER_NAME}
 
-
 az vm open-port --port 80 --resource-group ${RESOURCE_GROUP_NAME} --name ${VM_NAME}
 
 ipAdress=az vm show -d -g ${RESOURCE_GROUP_NAME} --name ${VM_NAME} --query publicIps -o tsv
