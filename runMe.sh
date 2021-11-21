@@ -22,4 +22,4 @@ az vm open-port --port 80 --resource-group ${RESOURCE_GROUP_NAME} --name ${VM_NA
 
 ipAdress=az vm show -d -g ${RESOURCE_GROUP_NAME} --name ${VM_NAME} --query publicIps -o tsv
 
-open rdp://ipAdress 
+open rdp://${ipAdress} 
