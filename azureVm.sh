@@ -24,7 +24,7 @@ az vm show -d -g groupName --name vmName --query publicIps -o tsv
 mstsc /v:publicIpAddress
 
 # Mac
-open rdp://ipAdress
+open rdp://${ipAdress}
 
 
 
