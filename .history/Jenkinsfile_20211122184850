@@ -1,9 +1,0 @@
-pipeline {
-  agent {
-    node {
-      lebel 'any'
-    }
-  }
-
-  env
-}
