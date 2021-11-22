@@ -1,13 +1,5 @@
 pipeline {
-  agent {
-    node {
-      lebel 'any'
-    }
-  }
-
-  environment {
-
-  }
+  agent any
 
   stages {
     stage ("Test") {
