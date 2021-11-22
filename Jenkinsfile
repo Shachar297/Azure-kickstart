@@ -14,7 +14,7 @@ pipeline {
     stage ("Checkout") {
       steps {
         git branch : "master",
-        credentialsId : 'admin',
+        credentialsId : 'Shachar',
         url : 'git@github.com:Shachar297/azure-backend.git'
       }
     }
