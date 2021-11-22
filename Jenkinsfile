@@ -13,14 +13,14 @@ pipeline {
   stage ("Create VM") {
     steps {
       script {
-        sh ("
+        sh("""
           az vm create \
           --resource-group ${RESOURCE_GROUP_NAME} \
           --name ${VM_NAME} \
           --image ${FIRST_IMAGE} \
           --public-ip-sku Standard \
           --admin-username ${USER_NAME}
-          ")
+          """)
         }
       }
     }
