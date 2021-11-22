@@ -6,6 +6,7 @@ pipeline {
       steps {
         script {
           sh "echo ok"
+          sh "echo ${params}"
         }
       }
     }
