@@ -1,0 +1,3 @@
+[submodule "azure-ci-cd"]
+	path = azure-ci-cd
+	url = git@github.com:Shachar297/azure-ci-cd.git
