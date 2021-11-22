@@ -10,5 +10,9 @@ pipeline {
         }
       }
     }
+stage("init submodule") {
+  sh 'git submodule update --init --recursive --remote'
+}
+
   }
 }
