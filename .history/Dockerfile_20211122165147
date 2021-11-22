@@ -1,0 +1,4 @@
+FROM alpine:latest
+
+
+RUN apt-get install nodejs npm

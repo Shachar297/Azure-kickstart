@@ -2,7 +2,7 @@ RESOURCE_GROUP_NAME="ShacharWeb"
 VM_NAME="nodeJsApp"
 USER_NAME="Shachar"
 FIRST_IMAGE="UbuntuLTS"
-SECOND_IMAGE="nodejs-ubuntu"
+secondVM="nodejs-ubuntu"
 #az login
 #az group create --name ${RESOURCE_GROUP_NAME} --location eastus
 
@@ -14,7 +14,7 @@ az vm create \
 --resource-group ${RESOURCE_GROUP_NAME} \
  --name ${VM_NAME} \
   --image ${FIRST_IMAGE} \
-  --image ${SECOND_IMAGE} \
+  --image ${}
    --public-ip-sku Standard \
     --admin-username ${USER_NAME}
 

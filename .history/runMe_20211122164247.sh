@@ -1,8 +1,8 @@
 RESOURCE_GROUP_NAME="ShacharWeb"
-VM_NAME="nodeJsApp"
+VM_NAME="FirstVM"
 USER_NAME="Shachar"
-FIRST_IMAGE="UbuntuLTS"
-SECOND_IMAGE="nodejs-ubuntu"
+FIRST_IMAGE="U"
+
 #az login
 #az group create --name ${RESOURCE_GROUP_NAME} --location eastus
 
@@ -13,8 +13,7 @@ echo ${USER_NAME}
 az vm create \
 --resource-group ${RESOURCE_GROUP_NAME} \
  --name ${VM_NAME} \
-  --image ${FIRST_IMAGE} \
-  --image ${SECOND_IMAGE} \
+  --image win2019Datacenter \
    --public-ip-sku Standard \
     --admin-username ${USER_NAME}
 
