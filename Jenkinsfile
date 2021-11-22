@@ -11,17 +11,17 @@ pipeline {
       }
     }
 
-    stage ("Checkout") {
-      steps {
-        git branch : "master",
-        credentialsId : 'Shachar297',
-        url : 'git@github.com:Shachar297/azure-backend.git'
-      }
-    }
-    stage("init submodule") {
-      steps {
-        sh 'git submodule update --init --recursive --remote'
-      }
-    }
+    // stage ("Checkout") {
+    //   steps {
+    //     git branch : "master",
+    //     credentialsId : 'Shachar297',
+    //     url : 'git@github.com:Shachar297/azure-backend.git'
+    //   }
+    // }
+    // stage("init submodule") {
+    //   steps {
+    //     sh 'git submodule update --init --recursive --remote'
+    //   }
+    // }
   }
 }
